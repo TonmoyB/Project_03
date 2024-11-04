@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-body">
+        <div class="form-controll">
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder=" Enter Name... " required>
+
+                <label for="phn">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder=" Enter Phone... " required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder=" Enter Email... " required>
+
+                <label for="lname">Address</label>
+                <input type="text" id="address" name="address" placeholder=" Enter Address... " required>
+
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="data-controll">
+        <div class="mainData">
+            <div>
+                <b>
+                    <p> TO-DO </p>
+                </b>
+                <div id="showData" class="showData"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
