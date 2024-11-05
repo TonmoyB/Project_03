@@ -6,24 +6,28 @@
 
 .form-controll {
     font-size: xx-large;
-    display: inline;
     text-align: center;
 }
 
-.form-controll input,
-.mainData input {
-    width: 10%;
+.overflow-input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-controll input {
+    width: 20%;
     padding: 15px;
     font-size: 15px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .data-controll {
     margin: 50px;
     background-color: khaki;
-    padding: 5px;
-    flex-direction: column;
+    padding: 10px;
 }
 
 .mainData p {
@@ -35,19 +39,68 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
 .data {
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
-    width: 300px;
-    height: auto;
-    font-size: larger;
+    width: auto;
+    font-size: 25px;
+    height: max-content;
     border: 2px solid black;
     background-color: white;
     margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_style {
+    border: 2px solid;
+    display: flex;
     flex-direction: column;
+    width: 65%;
+    padding: 10px;
+    margin-left: 10px;
+    word-wrap: break-word;
+    text-align: start;
+}
+
+.complete-check {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete-check input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.complete-check input[type="checkbox"]:checked+.checkmark {
+    background-color: limegreen;
+}
+
+.checkmark {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.dueDate_style {
+    width: 20%;
+    text-align: center;
 }
 
 .Buttons {
@@ -61,6 +114,8 @@
     font-size: large;
     background-color: green;
     margin-right: 20px;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
 .deleteButton {
@@ -68,4 +123,6 @@
     width: 70px;
     font-size: large;
     background-color: red;
+    cursor: pointer;
+    border-radius: 50px;
 }

@@ -11,20 +11,15 @@
 <body>
     <div class="form-body">
         <div class="form-controll">
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder=" Enter Name... " required>
+            <form id="taskForm">
+                <label for="task_data">Task Details</label>
+                <input type="text" id="task_data" name="task_data" class="overflow-input" placeholder=" Add Task.... "
+                    required>
 
-                <label for="phn">Phone</label>
-                <input type="text" id="phone" name="phone" placeholder=" Enter Phone... " required>
+                <label for="due_date">Due Date</label>
+                <input type="date" id="due_date" name="due_date" placeholder=" Enter Date.... " required>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder=" Enter Email... " required>
-
-                <label for="lname">Address</label>
-                <input type="text" id="address" name="address" placeholder=" Enter Address... " required>
-
-                <input type="submit">
+                <input type="submit" value="ADD">
             </form>
         </div>
     </div>
@@ -33,7 +28,7 @@
         <div class="mainData">
             <div>
                 <b>
-                    <p> TO-DO </p>
+                    <p> TO-DO LIST </p>
                 </b>
                 <div id="showData" class="showData"></div>
             </div>
